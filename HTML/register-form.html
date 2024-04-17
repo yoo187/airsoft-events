@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Merienda:wght@300..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<title>Airsoft Events</title>
+</head>
+<body>
+    <div class="background-image"></div> <!-- Voeg een div toe voor de achtergrondafbeelding -->
+    <div class="content">
+<header id="navbar">
+
+    <a href="../HTML/index.html">
+    <img src="../IMG/logo.png" alt="logo" class="fixed" width="250" height="200">
+    </a>
+
+    <h2 class="dropdown-trigger">MENU</h2>
+
+<div class="dropdown-content">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Wat is Airsoft</a></li>
+        <li><a href="terreinen.html">Terreinen</a></li>
+        <li><a href="huur.html">Huurmogelijkheden</a></li>
+        <li><a href="events.html">Prive Evenement</a></li>
+        <li><a href="reglement.html">Reglement</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+</div>
+</header>
+
+    <h1>Registratieformulier</h1>
+    <div class="booox">
+
+    <div class="registration-form">
+        
+        <form action="register.php" method="POST">
+            <!--Gebruikers Gegevens-->
+
+            <fieldset>
+                <legend>Gebruikersgegevens</legend>
+                <label for="username">Gebruikersnaam:</label><br>
+                <input type="text" id="username" name="username" required><br>
+            
+                <label for="password">Wachtwoord:</label><br>
+                <input type="password" id="password" name="password" required><br>
+            
+                <label for="confirm_password">Herhaal wachtwoord:</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required><br>
+            </fieldset>
+
+            <!-- Persoonlijke gegevens -->
+<fieldset>
+    <legend>Persoonlijke gegevens</legend>
+    <label for="firstname">Voornaam:</label><br>
+    <input type="text" id="firstname" name="firstname" required><br>
+    <label for="lastname">Achternaam:</label><br>
+    <input type="text" id="lastname" name="lastname" required><br>
+    <label for="postcode">Postcode:</label><br>
+    <input type="text" id="postcode" name="postcode" required><br>
+    <label for="housenumber">Huisnummer:</label><br>
+    <input type="text" id="housenumber" name="housenumber" required><br>
+    <label for="addition">Toevoeging:</label><br>
+    <input type="text" id="addition" name="addition"><br>
+    <label for="street">Straat:</label><br>
+    <input type="text" id="street" name="street" required><br>
+    <label for="city">Woonplaats:</label><br>
+    <input type="text" id="city" name="city" required><br>
+    <label for="country">Land:</label><br>
+    <select id="country" name="country" required>
+        <option value="Nederland">Nederland</option>
+        <option value="België">België</option>
+        <option value="Duitsland">Duitsland</option>
+        <option value="Frankrijk">Frankrijk</option>
+        <option value="Verenigd Koninkrijk">Verenigd Koninkrijk</option>
+        <option value="Spanje">Spanje</option>
+    </select><br>
+    <label for="phone">Telefoonnummer:</label><br>
+    <input type="tel" id="phone" name="phone" required><br>
+    <label for="email">Emailadres:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="birthdate">Geboortedatum:</label><br>
+    <input type="date" id="birthdate" name="birthdate" required><br>
+</fieldset>
+
+<!-- Bedrijfsgegevens -->
+<fieldset>
+    <legend>Bedrijfsgegevens (optioneel)</legend>
+    <label for="companyname">Bedrijfsnaam:</label><br>
+    <input type="text" id="companyname" name="companyname"><br>
+    <label for="kvk">KVK-nummer:</label><br>
+    <input type="text" id="kvk" name="kvk"><br>
+    <label for="btw">BTW-nummer:</label><br>
+    <input type="text" id="btw" name="btw"><br>
+</fieldset>
+
+<!-- Afleveradres -->
+<fieldset>
+    <legend>Afleveradres</legend>
+    <label for="delivery_postcode">Postcode:</label><br>
+    <input type="text" id="delivery_postcode" name="delivery_postcode" required><br>
+    <label for="delivery_housenumber">Huisnummer:</label><br>
+    <input type="text" id="delivery_housenumber" name="delivery_housenumber" required><br>
+    <label for="delivery_addition">Toevoeging:</label><br>
+    <input type="text" id="delivery_addition" name="delivery_addition"><br>
+    <label for="delivery_street">Straat:</label><br>
+    <input type="text" id="delivery_street" name="delivery_street" required><br>
+    <label for="delivery_city">Woonplaats:</label><br>
+    <input type="text" id="delivery_city" name="delivery_city" required><br>
+    <label for="delivery_country">Land:</label><br>
+    <select id="delivery_country" name="delivery_country" required>
+        <option value="Nederland">Nederland</option>
+        <option value="België">België</option>
+        <option value="Duitsland">Duitsland</option>
+        <option value="Frankrijk">Frankrijk</option>
+        <option value="Verenigd Koninkrijk">Verenigd Koninkrijk</option>
+        <option value="Spanje">Spanje</option>
+    </select><br>
+</fieldset>
+
+
+            <input type="submit" value="Registreren">
+        </form>
+
+
+    </div>
+
+        <script>
+// Vang het formulier af
+const form = document.querySelector('form');
+
+// Voeg een event listener toe voor het indienen van het formulier
+form.addEventListener('submit', function(event) {
+    // Vang de ingevulde gebruikersnaam af
+    const usernameField = document.getElementById('username');
+    const username = usernameField.value;
+
+    // Vang de wachtwoordvelden af
+    const passwordField = document.getElementById('password');
+    const confirmPasswordField = document.getElementById('confirm_password');
+
+    // Controleer of de wachtwoorden overeenkomen
+    if (passwordField.value !== confirmPasswordField.value) {
+        // Voorkom standaard gedrag van het formulier
+        event.preventDefault();
+
+        // Geef een foutmelding weer
+        alert("De wachtwoorden komen niet overeen!");
+    } else {
+        // Controleer of alle verplichte velden zijn ingevuld
+        const requiredFields = form.querySelectorAll('input[type="text"], input[type="password"], input[type="email"]');
+        let allRequiredFieldsFilled = true;
+
+        requiredFields.forEach(function(field) {
+            if (!field.value) {
+                allRequiredFieldsFilled = false;
+            }
+        });
+
+        // Als alle verplichte velden zijn ingevuld, toon een welkomstbericht
+        if (allRequiredFieldsFilled) {
+            alert("Welkom bij Black Wolf, " + username + "!");
+        } else {
+            // Voorkom standaard gedrag van het formulier
+            event.preventDefault();
+
+            // Geef een foutmelding weer als niet alle verplichte velden zijn ingevuld
+            alert("Vul alle verplichte velden in voordat u doorgaat.");
+        }
+    }
+});
+
+
+        </script>
+        <script src="../JS/JQuery3.7.1.js"></script>
+        <script src="../JS/dropdown.js"></script>
+</body>
+</html>

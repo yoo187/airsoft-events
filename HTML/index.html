@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Merienda:wght@300..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<title>Airsoft Events</title>
+
+</head>
+<body>
+    <div class="background-image"></div> <!-- Voeg een div toe voor de achtergrondafbeelding -->
+    <div class="content">
+        
+        
+        <header id="navbar">
+    <a href="../HTML/index.html">
+    <img src="../IMG/logo.png" alt="logo" class="fixed" width="250" height="200">
+    </a>
+
+     
+<h2 class="dropdown-trigger">MENU</h2>
+
+<div class="dropdown-content">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Wat is Airsoft</a></li>
+        <li><a href="terreinen.html">Terreinen</a></li>
+        <li><a href="huur.html">Huurmogelijkheden</a></li>
+        <li><a href="events.html">Prive Evenement</a></li>
+        <li><a href="reglement.html">Reglement</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+</div>
+
+</header>
+
+    </div>
+    <div class="booox">
+<h1>Welkom bij <br> BLACK WOLF TACTICAL <span class="red-text">AIRSOFT</span> TEAM</h1>
+
+<p>Op deze pagina vind u alle info omtrent onze skirm datums, waar wij organiseren en welke <strong>terreinen</strong> wij tot onze beschikking hebben. Tevens organiseren wij ook <strong>bedrijfsfeestjes</strong>, <strong>vrijgezellenfeestjes</strong> enz.</p>
+
+
+    <h2>Events van de maand</h2>
+
+<div class="container">
+
+    <div class="image-wrapper">
+    <img src="../IMG/event1.jpg" alt="event1" width="150" height="300" onclick="openModal('12-04-2024 Nuketown XL Open day', '20.00')">
+    <p class="date">12-04-2024</p>
+    </div>
+
+    <div class="image-wrapper">
+    <img src="../IMG/event2.jpg" alt="event2" width="150" height="300" onclick="openModal('13-04-2024 The Chambers', '30.00')">
+<p class="date">13-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event3.jpg" alt="event3" width="150" height="300" onclick="openModal('14-04-2024 Fort Knox', '30.00')">
+<p class="date">14-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event4.jpg" alt="event4" width="150" height="300" onclick="openModal('14-04-2024 Nuketown XL Open day', '20.00')">
+<p class="date">14-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event5.jpg" alt="event5" width="150" height="300" onclick="openModal('14-04-2024 The Chambers', '30.00')">
+<p class="date">14-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event6.jpg" alt="event6" width="150" height="300" onclick="openModal('17-04-2024 Nuketown XL 3.0 Trainingday', '15.00')">
+<p class="date">17-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event7.jpg" alt="event7" width="150" height="300" onclick="openModal('19-04-2024 Nuketown XL Open day', '20.00')">
+<p class="date">19-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event8.jpg" alt="event8" width="150" height="300" onclick="openModal('20-04-2024 The Chambers The Columbian Gauntlet', '35.00')">
+<p class="date">20-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event9.jpg" alt="event9" width="150" height="300" onclick="openModal('21-04-2024 The Chambers Fort Knox', '30.00')">
+<p class="date">21-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event10.jpg" alt="event10" width="150" height="300" onclick="openModal('26-04-2024 Nuketown XL Open day', '20.00')">
+<p class="date">26-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event11.jpg" alt="event11" width="150" height="300" onclick="openModal('27-04-2024 The Chambers', '30.00')">
+<p class="date">27-04-2024</p>
+</div>
+
+<div class="image-wrapper">
+    <img src="../IMG/event12.jpg" alt="event12" width="150" height="300" onclick="openModal('28-04-2024 Fort Knox', '30.00')">
+<p class="date">28-04-2024</p>
+</div>
+    <!-- Voeg de overige 5 afbeeldingen op dezelfde manier toe -->
+</div>
+<!-- Modaal venster -->
+<div id="myModal" class="modall">
+    <div class="modal-contentt">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="eventTitle"></h2>
+      <p id="eventPrice"></p>
+      <form>
+        <label for="ticketType">Nuketown XL Open day:</label>
+        <br>
+        <select id="ticketType" name="ticketType">
+            <option value="single">Eigen gear</option>
+            <option value="group">Huurkit (€40.00)</option>
+        </select>
+        <br><br>
+
+        <label for="ticketType">AAB Lid Nuketown XL Open Day:</label>
+        <br>
+        <select id="ticketType" name="ticketType">
+            <option value="single">Geen lid</option>
+            <option value="group">AAB lid (€ -1)</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Bestel">
+    </form>
+      <!-- Voeg hier het bestelformulier toe -->
+    </div>
+  </div>
+
+
+</div>
+
+
+
+    <script src="../JS/JQuery3.7.1.js"></script>
+    <script src="../JS/dropdown.js"></script>
+    <script src="../JS/formmodal.js"></script>
+    <script src="../JS/navbar.js"></script>
+
+</body>
+</html>

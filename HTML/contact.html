@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&family=Merienda:wght@300..900&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<title>Airsoft Events</title>
+</head>
+<body>
+    <div class="background-image"></div> <!-- Voeg een div toe voor de achtergrondafbeelding -->
+    <div class="content"> 
+<header id="navbar">
+
+    <a href="../HTML/index.html">
+    <img src="../IMG/logo.png" alt="logo" class="fixed" width="250" height="200">
+    </a>
+
+    <h2 class="dropdown-trigger">MENU</h2>
+
+<div class="dropdown-content">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Wat is Airsoft</a></li>
+        <li><a href="terreinen.html">Terreinen</a></li>
+        <li><a href="huur.html">Huurmogelijkheden</a></li>
+        <li><a href="events.html">Prive Evenement</a></li>
+        <li><a href="reglement.html">Reglement</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+    </ul>
+</div>
+</header>
+    </div>
+
+    <div class="booox">
+
+        <div class="contact-form">
+
+        <h1>Contactformulier</h1>
+        <p>Heeft u vragen of opmerkingen? Vul dan het onderstaande contactformulier in.</p>
+        <p>Alle velden m.u.v. het telefoonnummer zijn verplicht in te vullen. Na ontvangst van uw bericht zullen wij z.s.m. contact met u opnemen.</p>
+        <form action="contact-form.php" method="POST">
+            <label for="name">Uw naam:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Emailadres:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phone">Telefoonnummer:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="comment">Uw opmerking/vraag:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Verzenden">
+        </form>
+    </div>
+    </div>
+
+
+    <script src="../JS/JQuery3.7.1.js"></script>
+    <script src="../JS/dropdown.js"></script>
+    <script src="../JS/contact-form.js"></script>
+    <script src="../JS/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,847 @@
+header, img {
+    text-align: center;
+    margin: 0.5px;
+    padding: 0.5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF; /* Verander de achtergrond naar wit */
+    padding: 20px;
+}
+
+.background-image {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Hiermee wordt het midden van de afbeelding naar het midden van het scherm verplaatst */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-image: url("../IMG/background1.png");
+    background-size: cover;
+    max-width: 100%;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+}
+
+ul a {
+    color: rgb(198, 0, 0);
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    color: rgb(198, 0, 0);
+    margin-bottom: 10px;
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #2C302E;
+    text-shadow: 2px 2px 4px #474A48;
+    box-shadow: 4px 4px 8px #474A48;
+
+}
+
+ul li a:hover {
+    color: green;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    opacity: 0.75;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #474A48;
+    box-shadow: 4px 4px 8px #474A48;
+}
+
+h2{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    opacity: 0.75;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #474A48;
+    box-shadow: 4px 4px 8px #474A48;
+}
+
+.red-text{
+    color: rgb(198, 0, 0);
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: small;
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    opacity: 0.75;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #474A48;
+    box-shadow: 4px 4px 8px #474A48;
+}
+
+.center {
+    text-align: center;
+}
+
+.center img {
+    padding: 10px;
+    display: inline;
+    margin: 25px;
+    text-align: center;
+    opacity: 0.9;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #474A48;
+    
+}
+
+.image-table {
+    width: 100%;
+    
+}
+
+.image-table th, .image-table td {
+    border: 1px solid black;
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+    opacity: 0.9;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px #474A48;
+    box-shadow: 4px 4px 8px #474A48;
+}
+
+.image-table img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.center img {
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    padding: 20px;
+    margin-bottom: 20px; /* Ruimte tussen de boxes */
+    border-radius: 10px; /* Afgeronde hoeken */
+
+    display: flex; /* Gebruik flexbox voor de box */
+    justify-content: center; /* Horizontaal centreren van de afbeelding */
+    align-items: center; /* Verticaal centreren van de afbeelding */
+    flex-direction: column; /* Zorg ervoor dat items in de box onder elkaar worden geplaatst */
+    flex-wrap: wrap; /* Gebruik flexbox voor de box */
+
+}
+
+/* CSS code in index.css */
+
+.image-container {
+    text-align: center; /* Centreer de inhoud van de container */
+}
+
+.chambers {
+
+
+    border: 5px solid #ccc; /* Voeg een rand toe rondom de afbeelding */
+    border-radius: 5px; /* Afgeronde hoeken */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Voeg een lichte schaduw toe */
+    margin: 5px; /* Ruimte tussen de afbeeldingen */
+    max-width: 100%; /* Zorg ervoor dat de afbeelding niet breder wordt dan de box */
+
+}
+
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Afgeronde hoeken */
+    margin: 5px; /* Ruimte tussen de afbeeldingen */
+    
+}
+
+
+
+/* Stijl voor modaal venster */
+.modall {
+    display: none; /* Standaard verborgen */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparante achtergrond */
+}
+
+.modal-contentt {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+ /* Aangepaste stijlen voor het formulier binnen het modaal venster */
+ .modal-contentt form {
+    margin-top: 20px;
+}
+
+.modal-contentt form label {
+    font-size: 18px;
+    color: #333;
+}
+
+.modal-contentt form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+}
+
+.modal-contentt form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.modal-contentt form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+
+
+/* Stijlen voor de box met afbeeldingen */
+.boxx {
+    text-align: center;
+    display: block; /* Gebruik flexbox */
+    justify-content: space-between; /* Verdeel de ruimte tussen de afbeeldingen */
+    align-items: center; /* Centreer de afbeeldingen verticaal */
+    flex-wrap: wrap; /* Laat de afbeeldingen naar de volgende rij gaan als er niet genoeg ruimte is */
+    padding: 5px; /* Voeg wat ruimte toe rondom de afbeeldingen */
+}
+
+/* Stijlen voor de afbeeldingen */
+.boxx img {
+    align-items: center;
+    text-align: center;
+    max-width: 100%; /* De maximale breedte van de afbeelding instellen op 100% van de beschikbare ruimte */
+    max-height: 150px; /* De maximale hoogte van de afbeelding instellen op 150 pixels */
+    width: auto; /* Zorg ervoor dat de breedte van de afbeelding automatisch wordt aangepast om de verhoudingen te behouden */
+    height: auto; /* Zorg ervoor dat de hoogte van de afbeelding automatisch wordt aangepast om de verhoudingen te behouden */
+    margin-bottom: 5px; /* Voeg wat ruimte toe onder elke afbeelding */
+}
+
+/* Stijlen voor de huurlijst */
+.huurlijst li{
+    text-align: center;
+    display: block;
+    color: whitesmoke;
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+   .huurlijst ul{
+    display: block;
+   }
+
+
+.container{
+    text-align: center;
+}
+  
+
+
+
+.login-container {
+    display: flex;
+    justify-content: center; /* Centreren van de boxen */
+    align-items: center; /* Centreren van de boxen */
+    gap: 20px; /* Ruimte tussen de boxen */
+    margin-top: 20px; /* Ruimte boven de login-container */
+    flex-direction: column;
+}
+
+.boox {
+    background-color: rgba(255, 255, 255, 0.8); /* Lichtgekleurde achtergrond */
+    padding: 20px;
+    border-radius: 10px; /* Afgeronde hoeken */
+    text-align: center;
+    width: 800px; /* Breedte van de boxen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduw toevoegen */
+    flex-direction: column;
+}
+
+
+
+  /* Stijl voor formulierlabels */
+  form label {
+    display: block; /* Zorg ervoor dat elk label op een nieuwe regel wordt weergegeven */
+    margin-bottom: 1px; /* Ruimte onder elk label */
+}
+
+/* Stijl voor formulierinvoervelden */
+form input[type="text"],
+form input[type="password"],
+form input[type="submit"] {
+    width: 100%; /* Breedte van de invoervelden */
+    padding: 10px; /* Ruimte rondom de invoervelden */
+    margin-bottom: 1px; /* Ruimte onder elk invoerveld */
+    border: 1px solid #ccc; /* Rand rondom de invoervelden */
+    border-radius: 5px; /* Afgeronde hoeken */
+    box-sizing: border-box; /* Voorkom dat de rand de breedte van de invoervelden vergroot */
+}
+
+/* Stijl voor de inzendknop */
+form input[type="submit"] {
+    background-color: #4CAF50; /* Achtergrondkleur van de inzendknop */
+    color: white; /* Tekstkleur van de inzendknop */
+    border: none; /* Verwijder de rand rondom de inzendknop */
+    cursor: pointer; /* Verander de muisaanwijzer naar een handje wanneer je over de knop beweegt */
+}
+
+/* Stijl voor de inzendknop wanneer deze wordt ingedrukt */
+form input[type="submit"]:active {
+    background-color: #45a049; /* Donkerder achtergrondkleur wanneer de knop wordt ingedrukt */
+}
+
+#registerButton{
+    width: 100%; /* Breedte van de invoervelden */
+    padding: 10px; /* Ruimte rondom de invoervelden */
+    margin-bottom: 1px; /* Ruimte onder elk invoerveld */
+    border: 1px solid #ccc; /* Rand rondom de invoervelden */
+    border-radius: 5px; /* Afgeronde hoeken */
+    box-sizing: border-box; /* Voorkom dat de rand de breedte van de invoervelden vergroot */
+    background-color: #4CAF50; /* Achtergrondkleur van de inzendknop */
+    color: white; /* Tekstkleur van de inzendknop */
+    border: none; /* Verwijder de rand rondom de inzendknop */
+    cursor: pointer; /* Verander de muisaanwijzer naar een handje wanneer je over de knop beweegt */
+}
+
+#registerButton:active{
+    background-color: #45a049; /* Donkerder achtergrondkleur wanneer de knop wordt ingedrukt */
+}
+
+
+
+
+/* Formulieropmaak */
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Fieldset-opmaak */
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Label-opmaak */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input-veldopmaak */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Select-veldopmaak */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Knopopmaak */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Gebruikersnaam, wachtwoord en herhaal wachtwoord */
+input[type="text"][name="username"],
+input[type="password"][name="password"],
+input[type="password"][name="confirm_password"] {
+    width: calc(100% - 22px); /* -22px om rekening te houden met de padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Bevestig wachtwoordveld */
+input[type="password"][name="confirm_password"] {
+    margin-bottom: 20px;
+}
+
+
+.booox{
+    max-width: 1000px; /* Maximale breedte van de container */
+    margin: 0 auto; /* Horizontaal centreren */
+    padding: 20px; /* Binnenste vulling om de inhoud van de container te scheiden van de rand */
+    border: 2px solid #ccc; /* Rand om de container toe te voegen */
+    border-radius: 10px; /* Afgeronde hoeken voor de container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schaduw toevoegen aan de container */
+}
+
+.fixed{
+    
+    text-align: center;
+    
+}
+
+
+
+
+/* Stijl voor het contactformulier binnen de .booox */
+.booox .contact-form {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.booox .contact-form label {
+    font-weight: bold;
+}
+
+.booox .contact-form input[type="text"],
+.booox .contact-form input[type="email"],
+.booox .contact-form input[type="tel"],
+.booox .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.booox .contact-form textarea {
+    height: 100px;
+}
+
+.booox .contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booox .contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.dropdown-trigger,
+.dropdown-trigger:hover {
+    cursor: pointer;
+
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.dropdown-content p,
+.dropdown-content ul {
+    margin-top: 10px;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+.container {
+    width: 100%;
+    overflow-x: auto; /* Maak horizontaal scrollen mogelijk */
+    white-space: nowrap; /* Voorkom dat afbeeldingen naar een nieuwe regel gaan */
+}
+
+.container img {
+    width: 150px;
+    height: 300px;
+    margin: 0 5px; /* Voeg wat ruimte toe tussen de afbeeldingen */
+    border-radius: 5px;
+}
+
+.container::-webkit-scrollbar {
+    width: 12px; /* Breedte van de scrollbar */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Kleur van de scrollbar thumb */
+    border-radius: 10px; /* Afgeronde hoeken */
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Kleur van de scrollbar track */
+}
+
+
+
+
+
+.container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.image-wrapper {
+    display: inline-block;
+    margin-right: 20px; /* Afstand tussen elke afbeelding */
+}
+
+.image-wrapper img {
+    width: 150px;
+    height: 300px;
+}
+
+.date {
+    text-align: center;
+    margin-top: 5px; /* Ruimte tussen de datum en de afbeelding */
+    font-size: 20px; /* Grootte van de datum */
+}
+
+.guns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centreren van de afbeeldingen */
+    margin-top: 20px;
+}
+
+.guns img {
+    max-width: 100%; /* Afbeeldingen passen zich aan aan de breedte van hun container */
+    height: auto; /* Behoudt de juiste verhouding */
+    margin: 5px; /* Voeg wat ruimte toe tussen de afbeeldingen */
+}
+
+
+
+/* Voeg stijlen toe voor mobiele apparaten */
+@media only screen and (max-width: 600px) {
+    /* Algemene stijl voor header en navigatie */
+    header {
+        padding: 10px 0;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Stijl voor dropdown-content */
+    .dropdown-content {
+        display: none;
+    }
+
+    /* Stijl voor events van de maand */
+    .image-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Modaal venster */
+    .modal-contentt {
+        width: 85%;
+    }
+
+
+
+
+    /* Stijl voor booox */
+    .booox {
+        padding: 20px;
+    }
+
+    /* Stijl voor afbeeldingen */
+    .chambers {
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .image-row img {
+        text-align: center;
+        width: 100%; /* Elke afbeelding neemt bijna de helft van de beschikbare ruimte in */
+        margin-bottom: 10px;
+    }
+
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .boxx {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+    
+    .boxx img {
+        width: 100%;
+        height: auto;
+    }
+
+    .login-container{
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    .login-section{
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .boox{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .register-section{
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 20px;
+        max-width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    p{
+        font-size: 16px;
+        max-width: 100%;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .guns{
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;  
+    }
+    .background-image {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.9;
+        background-image: url("../IMG/background1.png");
+        background-size: cover;
+       
+        max-width: 100%;
+    }
+
+    .huurlijst li {
+        font-size: 16px;
+    }
+
+    .boxx .red-text p{
+        text-align: center;
+    }
+
+    li a {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
